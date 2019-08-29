@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className="site-content">
+        <div className="container-fluid" style={{padding: 0}}>
           <Switch>
             <Route
               exact
