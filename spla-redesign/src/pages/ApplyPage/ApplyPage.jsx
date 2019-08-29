@@ -9,48 +9,59 @@ const ApplyPage = props => {
   return (
     <div>
       <Header />
-      <Row className="site-content-row">
-        <Col xs={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 1 }}>
-          <h3
+      <Row>
+        <Col>
+          <h2
             style={{
-              fontSize: "20px",
+              fontSize: "30px",
               textAlign: "center",
-              marginTop: "15vmin"
+              marginTop: "10vmin"
             }}
           >
             WHAT DO YOU NEED?
-          </h3>
+          </h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 12 }} lg={{ span: 6 }}>
           <div className="carImg-container">
             <img
-              className="carImg"
+              className="img-fluid"
               src="https://i.imgur.com/GMztFRe.png"
               alt="car-img"
+              style={{maxWidth: '30%', marginBottom: '30px',  marginTop: '30px'}}
             />
           </div>
-          <Link id="btnColor-orange" className="btn" to="/applicationpage">
+          <Link id="btnColor-orange" className="btn mx-auto" to="/applicationpage" style={{maxWidth: '60%'}}>
             Apply to Safe Parking
           </Link>
           <br />
           <p className="home-about-msg" style={{ textAlign: "center" }}>
-            Apply for a spot in one of our Safe Parking LA lots{" "}
+            Apply for a spot in one of <br></br> our Safe Parking LA lots{" "}
           </p>
         </Col>
-        <Col xs={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+        <Col xs={{ span: 12 }} lg={{ span: 6 }}>
           <div className="chatImg-container">
             <img
-              className="chatImg"
+              className="img-fluid"
               src="https://i.imgur.com/bmcQ7o9.png"
               alt="chat-box"
+              style={{maxWidth: '37%', marginBottom: '30px', marginTop: '30px'}}
             />
           </div>
-          <Link className="btn" to="/resources">
+          <Link className="btn mx-auto" to="/resources" style={{maxWidth: '60%'}}>
             Resources
           </Link>
           <br />
           <p className="home-about-msg" style={{ textAlign: "center" }}>
-            Find services and resources in your area
+            Find services and <br></br> resources in your area
           </p>
-          <p className="home-about-msg" style={{ textAlign: "center" }}>
+          
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p className="home-about-msg" style={{ textAlign: "center" , marginTop: '30px', marginBottom: '30px'}}>
             * For medical emergencies, please call 911.
           </p>
         </Col>

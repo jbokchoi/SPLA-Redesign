@@ -104,24 +104,16 @@ const HomePage = props => {
           </div>
         </nav>
         <Row className="site-content-row justify-context-xs-center">
-          <Col xs={12} lg={{ span: 6, offset: 1 }} className="home-welcome">
+          <Col xs={12} lg={{ span: 5, offset: 1 }} className="home-welcome">
             <h3>Welcome!</h3>
-            <Col
-              xs={{ span: 12 }}
-              lg={{ span: 6 }}
-              className="home-welcome-msg"
-            >
-              <p className="home-welcome-msg">
+            <p className="home-welcome-msg">
                 Nobody plans to be homeless. <br />
                 You’ve taken the first step towards help. <br />
                 You’re on the right track
-              </p>
-              <Col xs={{ span: 10, offset: 1 }}>
-                <Link to="/apply" className="btn-org">
+            </p>
+            <Link to="/apply" className="btn-org">
                   Get Started
-                </Link>
-              </Col>
-            </Col>
+            </Link>
           </Col>
         </Row>
       </div>
